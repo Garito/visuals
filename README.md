@@ -7,6 +7,10 @@ Everybody has probably seen mathematical visualizations that were created using 
 
 This talk is going to deconstruct some examples, explain the mathematical reasoning behind, reveal a few lesser known things about certain CSS properties and show how using a preprocessor can help with keeping these demos extremely customizable while actually writing very little code.
 
+## Usage
+
+Drop the repo link to http://5minfork.com/
+
 ## Slideshow navigation
 
 * `→` Next Slide
@@ -17,3 +21,5 @@ This talk is going to deconstruct some examples, explain the mathematical reason
 * `↑` Previous Slide View
 * `N` **N**ext Interactive Demo Step (on "distributing X on Y" slides)
 * `P` **P**revious Interactive Demo Step (on "distributing X on Y" slides)
+
+Double click Boo to see his coordinate system.
