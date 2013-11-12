@@ -22,4 +22,4 @@ Drop the repo link to http://5minfork.com/
 * `N` **N**ext Interactive Demo Step (on "distributing X on Y" slides)
 * `P` **P**revious Interactive Demo Step (on "distributing X on Y" slides)
 
-Double click Boo to see his coordinate system.
+Double click **Boo** to see his coordinate system.
