@@ -1,0 +1,316 @@
+<html>
+	<head>
+		<style>html {
+		  overflow: hidden;
+		  height: 100%;
+		  -webkit-perspective: 50em;
+		  background: dimgrey;
+		}
+
+		.polyhedron, .polyhedron *, .polyhedron *:before {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin: -5.25em;
+		  width: 10.5em;
+		  height: 10.5em;
+		  -webkit-transform-style: preserve-3d;
+		}
+
+		.icosahedron--explode,
+		.icosahedron--explode .pyramid--penta,
+		.icosahedron--explode .antiprism--penta__half,
+		.icosahedron--explode .face--penta__flipper {
+		  -webkit-animation: rot 8s ease-out infinite alternate;
+		}
+
+		@-webkit-keyframes rot {
+		  0% {
+		    -webkit-transform: translateY(10.5em) rotate(-352deg) translateY(-10.5em) rotateY(253deg) translateZ(5.25em) rotateX(-359deg);
+		  }
+
+		  20%, 60% {
+		    -webkit-transform: translateY(0) rotate(8deg) translateY(0) rotateY(-7deg) translateZ(0) rotateX(1deg);
+		  }
+
+		  80%, 100% {
+		    -webkit-transform: translateY(0) rotate(8deg) translateY(0) rotateY(-7deg) translateZ(0) rotateX(90deg) scale(0.5);
+		  }
+		}
+
+		.antiprism--penta {
+		  -webkit-transform: rotateY(0.62832rad);
+		}
+
+		.pyramid--penta:nth-child(1) {
+		  -webkit-animation-name: explode-slide1;
+		}
+		.pyramid--penta:nth-child(1) .polygon--fill:before {
+		  background-color: rgba(0, 229, 255, 0.25);
+		}
+
+		.antiprism--penta__half:nth-child(1) {
+		  -webkit-animation-name: slide1;
+		}
+		.antiprism--penta__half:nth-child(1) .polygon--fill:before {
+		  background-color: rgba(255, 0, 51, 0.25);
+		}
+
+		.icosahedron--explode
+		.face--penta__flipper--pyramid {
+		  -webkit-animation-name: flip1;
+		}
+
+		@-webkit-keyframes explode-slide1 {
+		  0%, 20% {
+		    -webkit-transform: translateY(4.46592em) rotateX(-3.14159rad);
+		  }
+
+		  40%, 60% {
+		    -webkit-transform: translateY(13.39775em) rotateX(-3.14159rad);
+		  }
+
+		  80%, 100% {
+		    -webkit-transform: translateY(13.39775em) rotateX(-3.14159rad) translateX(35.72733em);
+		  }
+		}
+
+		@-webkit-keyframes slide1 {
+		  0%, 60% {
+		    -webkit-transform: translateY(4.46592em) rotateX(0rad);
+		  }
+
+		  80%, 100% {
+		    -webkit-transform: translateY(4.46592em) rotateX(0rad) translateX(17.86367em);
+		  }
+		}
+
+		@-webkit-keyframes flip1 {
+		  0%, 40% {
+		    -webkit-transform: rotateX(0.91844rad);
+		  }
+
+		  60%, 100% {
+		    -webkit-transform: rotateX(-1.5708rad);
+		  }
+		}
+
+		.pyramid--penta:nth-child(2) {
+		  -webkit-animation-name: explode-slide2;
+		}
+		.pyramid--penta:nth-child(2) .polygon--fill:before {
+		  background-color: rgba(0, 255, 213, 0.25);
+		}
+
+		.antiprism--penta__half:nth-child(2) {
+		  -webkit-animation-name: slide2;
+		}
+		.antiprism--penta__half:nth-child(2) .polygon--fill:before {
+		  background-color: rgba(255, 132, 0, 0.25);
+		}
+
+		.icosahedron--explode
+		.face--penta__flipper--antiprism {
+		  -webkit-animation-name: flip2;
+		}
+
+		@-webkit-keyframes explode-slide2 {
+		  0%, 20% {
+		    -webkit-transform: translateY(-4.46592em) rotateX(0rad);
+		  }
+
+		  40%, 60% {
+		    -webkit-transform: translateY(-13.39775em) rotateX(0rad);
+		  }
+
+		  80%, 100% {
+		    -webkit-transform: translateY(-13.39775em) rotateX(0rad) translateX(-35.72733em);
+		  }
+		}
+
+		@-webkit-keyframes slide2 {
+		  0%, 60% {
+		    -webkit-transform: translateY(-4.46592em) rotateX(-3.14159rad);
+		  }
+
+		  80%, 100% {
+		    -webkit-transform: translateY(-4.46592em) rotateX(-3.14159rad) translateX(-17.86367em);
+		  }
+		}
+
+		@-webkit-keyframes flip2 {
+		  0%, 40% {
+		    -webkit-transform: rotateX(-0.18871rad);
+		  }
+
+		  60%, 100% {
+		    -webkit-transform: rotateX(-1.5708rad);
+		  }
+		}
+
+		.face--penta:nth-child(1) {
+		  -webkit-transform: rotateY(0rad) translateZ(7.22601em);
+		}
+		.face--penta:nth-child(1) .polygon--fill:before {
+		  background-image: linear-gradient(0rad, rgba(255, 0, 0, 0.25) 50%, transparent);
+		}
+		.face--penta:nth-child(2) {
+		  -webkit-transform: rotateY(1.25664rad) translateZ(7.22601em);
+		}
+		.face--penta:nth-child(2) .polygon--fill:before {
+		  background-image: linear-gradient(4rad, rgba(0, 64, 255, 0.25) 50%, transparent);
+		}
+		.face--penta:nth-child(3) {
+		  -webkit-transform: rotateY(2.51327rad) translateZ(7.22601em);
+		}
+		.face--penta:nth-child(3) .polygon--fill:before {
+		  background-image: linear-gradient(4rad, rgba(0, 255, 43, 0.25) 50%, transparent);
+		}
+		.face--penta:nth-child(4) {
+		  -webkit-transform: rotateY(3.76991rad) translateZ(7.22601em);
+		}
+		.face--penta:nth-child(4) .polygon--fill:before {
+		  background-image: linear-gradient(1rad, rgba(76, 255, 0, 0.25) 50%, transparent);
+		}
+		.face--penta:nth-child(5) {
+		  -webkit-transform: rotateY(5.02655rad) translateZ(7.22601em);
+		}
+		.face--penta:nth-child(5) .polygon--fill:before {
+		  background-image: linear-gradient(5rad, rgba(251, 0, 255, 0.25) 50%, transparent);
+		}
+
+		.triangle {
+		  overflow: hidden;
+		  -webkit-transform: rotate(0.5236rad) skewY(0.5236rad) scaleX(0.86603);
+		  box-shadow: inset 0.125em 0.125em rgba(0, 0, 0, 0.3);
+		}
+		.triangle:before {
+		  -webkit-transform: scaleX(1.1547) skewY(-0.5236rad) rotate(-0.5236rad) translateY(-50%);
+		  box-shadow: inset 0 -0.125em rgba(0, 0, 0, 0.3);
+		  background-position: 50% 100%;
+		  background-repeat: no-repeat;
+		  background-size: 10.5em 9.09327em;
+		  content: '';
+		}
+
+		 /**
+		.icosahedron:hover .polygon--fill {
+		  -webkit-backface-visibility: hidden;
+		}/**/
+		</style>
+	</head>
+	<body>
+		<div class='icosahedron icosahedron--explode polyhedron'>
+		  <div class='pyramid--penta'>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class='pyramid--penta'>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		    <div class='face--penta'>
+		      <div class='face--penta__flipper face--penta__flipper--pyramid'>
+		        <div class='triangle polygon--fill'></div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class='antiprism--penta'>
+		    <div class='antiprism--penta__half'>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		    </div>
+		    <div class='antiprism--penta__half'>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		      <div class='face--penta'>
+		        <div class='face--penta__flipper face--penta__flipper--antiprism'>
+		          <div class='triangle polygon--fill'></div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>

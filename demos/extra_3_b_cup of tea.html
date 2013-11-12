@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<style>
+			body { margin: 0; overflow: hidden; background: #c3b49f; }
+			.set {
+				position: relative;
+				margin: 1em auto;
+				width: 32em; height: 32em;
+				border-radius: 50%;
+				transform: rotate(22.5deg);
+				box-shadow: 0 0 .5em gainsboro, inset 0 0 .5em gainsboro;
+				background: lemonchiffon 
+							radial-gradient(#447a3c 11%, transparent 11%, 
+							transparent 22%, #447a3c 22%, #447a3c 33%, transparent 33%, 
+							transparent 44%, #447a3c 44%, #447a3c 55%, transparent 55%, 
+							transparent 66%, #447a3c 66%, #447a3c 77%, transparent 77%) 
+							15% 15%;
+				background-size: 25% 25%;
+			}
+			.set:before {
+				position: absolute;
+				top: 12.5%; right: 12.5%; bottom: 12.5%; left: 12.5%;
+				border-radius: 50%;
+				transform: rotate(-45deg);
+				box-shadow: 0 0 .5em gainsboro, inset 0 0 .5em gainsboro;
+				background: radial-gradient(#850d0f, #701b14 40%, #9f693a 40%, #955e3a,  
+								#af7665 45%, #b58d73 45%, #ddd7cb, #b7a09a 50%,
+								rgba(255,255,255,0) 52%), 
+							lemonchiffon 
+							radial-gradient(#447a3c 11%, transparent 11%, 
+								transparent 22%, #447a3c 22%, #447a3c 33%, transparent 33%, 
+								transparent 44%, #447a3c 44%, #447a3c 55%, transparent 55%, 
+								transparent 66%, #447a3c 66%, #447a3c 77%, transparent 77%) 
+							20% 20%;
+				background-size: 100% 100%, 33% 33%;
+				content: '';
+			}
+			.set:after {
+				position: absolute;
+				top: 45.16%; right: 4.75%;
+				width: 18.75%; height: 8.33%;
+				border-radius: 0 33.33% 33.33% 0;
+				box-shadow: .2em 0 .2em gainsboro, inset 0 0 .5em gainsboro;
+				background: radial-gradient(dimgrey 19%, transparent 39%) 
+							50% 140% no-repeat, 
+							lemonchiffon 
+							radial-gradient(#447a3c 11%, transparent 11%, 
+								transparent 22%, #447a3c 22%, #447a3c 33%, transparent 33%, 
+								transparent 44%, #447a3c 44%, #447a3c 55%, transparent 55%, 
+								transparent 66%, #447a3c 66%, #447a3c 77%, transparent 77%) 
+							0 20%;
+				background-size: 500% 50%, 133.33% 300%;
+				content: '';
+			}
+		</style>
+	</head>
+	<body>
+		<div class='set'></div>
+	</body>
+</html>

@@ -1,0 +1,246 @@
+<html>
+	<head>
+		<style>html {
+		  content: 0.58779;
+		  content: 0.36327;
+		  content: 0.89443;
+		  overflow: hidden;
+		  height: 100%;
+		  -webkit-perspective: 38em;
+		  background: darkgrey;
+		}
+
+		.dodecahedron, .dodecahedron * {
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -webkit-transform-style: preserve-3d;
+		}
+
+		.dodecahedron {
+		  -webkit-animation: rot 16s infinite alternate;
+		}
+
+		.pentagon, .pentagon *, .pentagon *:before {
+		  overflow: hidden;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  margin: -8em;
+		  width: 16em;
+		  height: 16em;
+		}
+
+		.pentagon {
+		  -webkit-backface-visibility: hidden;
+		}
+
+		.pentagon:nth-child(1) {
+		  -webkit-animation: net0 16s infinite alternate;
+		}
+		.pentagon:nth-child(1) .inner:before {
+		  background-image: linear-gradient(249deg, rgba(0, 110, 255, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net0 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(0rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(0rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.pentagon:nth-child(2) {
+		  -webkit-animation: net1 16s infinite alternate;
+		}
+		.pentagon:nth-child(2) .inner:before {
+		  background-image: linear-gradient(64deg, rgba(255, 0, 128, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net1 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(1.25664rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(1.25664rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.pentagon:nth-child(3) {
+		  -webkit-animation: net2 16s infinite alternate;
+		}
+		.pentagon:nth-child(3) .inner:before {
+		  background-image: linear-gradient(213deg, rgba(255, 0, 26, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net2 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(2.51327rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(2.51327rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.pentagon:nth-child(4) {
+		  -webkit-animation: net3 16s infinite alternate;
+		}
+		.pentagon:nth-child(4) .inner:before {
+		  background-image: linear-gradient(328deg, rgba(0, 38, 255, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net3 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(3.76991rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(3.76991rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.pentagon:nth-child(5) {
+		  -webkit-animation: net4 16s infinite alternate;
+		}
+		.pentagon:nth-child(5) .inner:before {
+		  background-image: linear-gradient(172deg, rgba(255, 0, 76, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net4 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(5.02655rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(5.02655rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.pentagon:nth-child(6) {
+		  -webkit-transform: rotateX(-1.5708rad) scaleY(-1) translateY(4.20585em) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		}
+		.pentagon:nth-child(6) .inner:before {
+		  background-image: linear-gradient(297deg, rgba(127, 0, 255, 0.25) 33%, transparent);
+		}
+
+		@-webkit-keyframes net5 {
+		  0%, 75% {
+		    -webkit-transform: rotateY(6.28319rad) translateZ(4.20585em) rotateX(-0.46365rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+
+		  100% {
+		    -webkit-transform: rotateY(6.28319rad) translateZ(4.20585em) rotateX(-1.5708rad) rotate(-0.62832rad) skewX(0.31416rad) scaleY(0.95106);
+		  }
+		}
+
+		.inner {
+		  -webkit-transform: scaleY(1.05146) skewX(-0.31416rad) rotate(0.62832rad) translateY(-5.81234em) rotate(0.31416rad) skewY(0.94248rad) scaleX(0.58779);
+		}
+		.inner:before {
+		  -webkit-transform: scaleX(1.7013) skewY(-0.94248rad) rotate(-0.31416rad) translateY(-2.18766em);
+		  background-position: 50% 100%;
+		  content: "";
+		}
+
+		@-webkit-keyframes rot {
+		  0% {
+		    -webkit-transform: translateY(6.11146em) rotate(-270deg) translateY(-6.11146em) rotateY(253deg) translateZ(3.05573em) rotateX(-331deg);
+		  }
+
+		  50%, 100% {
+		    -webkit-transform: translateY(0) rotate(90deg) translateY(6.11146em) rotateY(-7deg) translateZ(0) rotateX(29deg);
+		  }
+		}
+
+		.half:nth-child(1) {
+		  -webkit-animation: explode0 16s infinite alternate;
+		}
+		.half:nth-child(1) .inner:before {
+		  background-color: rgba(255, 13, 0, 0.25);
+		}
+
+		@-webkit-keyframes explode0 {
+		  0%, 50% {
+		    -webkit-transform: rotateX(0deg) translateY(6.80521em);
+		  }
+
+		  62.5% {
+		    -webkit-transform: rotateX(0deg) translateY(11.90911em);
+		  }
+
+		  75%, 100% {
+		    -webkit-transform: rotateX(0deg) translateY(11.90911em) rotateX(90deg) rotateY(0rad) translate(2.20012em) translateZ(7.63932em);
+		  }
+		}
+
+		.half:nth-child(2) {
+		  -webkit-animation: explode1 16s infinite alternate;
+		}
+		.half:nth-child(2) .inner:before {
+		  background-color: rgba(0, 255, 204, 0.25);
+		}
+
+		@-webkit-keyframes explode1 {
+		  0%, 50% {
+		    -webkit-transform: rotateX(-180deg) translateY(6.80521em);
+		  }
+
+		  62.5% {
+		    -webkit-transform: rotateX(-180deg) translateY(11.90911em);
+		  }
+
+		  75%, 100% {
+		    -webkit-transform: rotateX(-180deg) translateY(11.90911em) rotateX(-90deg) rotateY(-0.62832rad) translate(2.20012em) translateZ(7.63932em);
+		  }
+		}
+		</style>
+	</head>
+	<body>
+		<div class='dodecahedron'>
+		  <div class='half'>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		  </div>
+		  <div class='half'>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		    <div class='pentagon'>
+		      <div class='inner'></div>
+		    </div>
+		  </div>
+		</div>
+	</body>
+</html>

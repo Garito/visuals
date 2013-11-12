@@ -1,0 +1,958 @@
+<html>
+<head>
+  <link href="style.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+  <section class='slides'>
+    
+    <section class='slide slide--current'>
+      
+      <header class='slide__header'>
+        <h1 class='slide__title'>
+          Stunning Visuals with Maths and... NO JavaScript?!
+        </h1>
+      </header> <!--- end header -->
+      
+      <footer class='slides__attribution'>
+        by 
+        <a class='slides__author' href='https://twitter.com/thebabydino'>
+          @thebabydino
+        </a>
+      </footer> <!--- end footer -->
+      
+    </section> <!--end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>before anything else</h3>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual list--bulleted'>
+          
+          <li class='list__item'>
+            just for the heck of it <span class='delayed'>(+ my JavaScript skills are lametastic & sucktacular!)</span>
+          </li>
+          
+          <li class='list__item'>
+            not always the best idea in practice <span class='delayed'>(I use JavaScript for the slides!)</span>
+          </li>
+          
+          <li class='list__item'>
+            resulting CSS can be one hideous monster <span class='delayed'>(hide all mirrors!)</span>
+          </li>
+          
+          <li class='list__item'>
+            won't look at the entire resulting CSS <span class='delayed'><span class='delayed'>(might cause a heart attack!)</span>
+          </li>
+          
+          <li class='list__item'>
+            simple particular cases, no prefixes, compact Sass code <span class='delayed'>(no LESS, sorry!)</span>
+          </li>
+          
+          <li class='list__item'>
+            let's start!
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h6 class='slide__title'>
+          ... and I hope not everyone falls asleep!
+        </h6>
+      </header>
+      
+      <section class='slide__body gallery__item--current'>
+        <img class='gallery__img' 
+          src='images/_sleepy_cheetah.jpg'/>
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide dark'>
+      
+      <header class='slide__header'>
+        <h2 class='slide__title'>smoothness</h2>
+      </header>
+      
+      <section class='slide__body gallery__item--current'>
+        <img class='gallery__img' 
+          src='images/ex_1_0_orig.gif'/>
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap slide--interact' data-c1='maths' data-c2='recap' data-demo='polytorus'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>what is a torus?</h3>
+      </header>
+      
+      <section class='slide__body gallery--sbs'>
+        
+        <div class='gallery__item gallery__item--current perspective-container'>
+          <div class='torus torus--poly'></div>
+        </div>
+        
+        <div class='gallery__item'>
+          <img class='gallery__img' 
+            src='images/ex_1_1_doughnut.jpg'/>
+        </div>
+
+        <div class='gallery__item'>
+          <img class='gallery__img' 
+            src='images/ex_1_1_doughnutb.jpg'/>
+        </div>
+
+        <div class='gallery__item'>
+          <img class='gallery__img' 
+            src='images/ex_1_1_doughnutc.jpg'/>
+        </div>
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>steps</h3>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual list--bulleted'>
+          
+          <li class='list__item'>
+            distribute dots on a circle
+          </li>
+          
+          <li class='list__item'>
+            distribute circles on the torus
+          </li>
+          
+          <li class='list__item'>
+            animate!
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap slide--interact dark' data-c1='css' data-c2='recap' data-demo='boo'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>CSS transforms</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.boo {
+  transform: none;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='boo'>
+            <div class='guides guides--2d hidden'></div>
+          </div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--interact' data-demo='spotty'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>distribute dots on a circle</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box box--fill-h attached--bottom attached--left'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.dot:nth-child(1) {
+  transform: none;
+}</pre>
+        </div> <!-- end code box -->
+
+        <div class='box cartoon attached--bottom attached--right'>
+          <img class='cartoon__img' src='images/_wile.png'/>
+          <div class='cartoon__txt cartoon__txt--wile'>
+            NOOO!
+          </div>
+        </div> <!-- end cartoon -->
+        
+        <section class='result result--live torus'>
+          <div class='circle circle--spotty'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap' data-c1='css' data-c2='recap'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          the <code>transform-style</code> property
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.doors {
+  animation: none;
+}
+@keyframes ani-3d {
+  from { transform: rotateY(-15deg); }
+  to { transform: rotateY(15deg); }
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='doors'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          the code for all the dots on a circle
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual'>
+          
+          <li class='list__item list__item--floater'>
+            <div>CSS</div>
+            
+            <div class='box box--fill-h'>
+              <pre>.dot:nth-child(1) {
+  transform: rotate(15deg) 
+             translate(3.5em) 
+             rotateY(90deg);
+}
+.dot:nth-child(2) {
+  transform: rotate(30deg) 
+             translate(3.5em) 
+             rotateY(90deg);
+}
+.dot:nth-child(3) {
+  transform: rotate(45deg) 
+             translate(3.5em) 
+             rotateY(90deg);
+}
+/* ... and so on... 24 times! */</pre>
+            </div>
+          </li>
+          
+          <li class='list__item list__item--floater'>
+            <div>Sass</div>
+            
+            <div class='box box--fill-h'>
+            <pre>$n: 24;
+
+@for $i from 1 through $n {
+  .dot:nth-child(#{$i}) {
+    transform: rotate($i*360deg/$n) 
+               translate(3.5em) 
+               rotateY(90deg);
+  }
+}</pre>
+            </div>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--interact' data-demo='doughnut'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>distribute circles on the torus</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box box--fill-h attached--bottom attached--left'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.circle:nth-child(1) {
+  transform: none;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='torus torus--doughnut'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          the code for all the circles on the torus
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual'>
+          
+          <li class='list__item list__item--floater'>
+            <div>CSS</div>
+            
+            <div class='box box--fill-h'>
+              <pre>.circle:nth-child(1) {
+  transform: rotate(15deg) 
+             translate(10.5em);
+}
+.circle:nth-child(2) {
+  transform: rotate(30deg) 
+             translate(10.5em);
+}
+.circle:nth-child(3) {
+  transform: rotate(45deg) 
+             translate(10.5em);
+}
+/* ... and so on... 20 times! */</pre>
+            </div>
+          </li>
+          
+          <li class='list__item list__item--floater'>
+            <div>Sass</div>
+            
+            <div class='box box--fill-h'>
+            <pre>$n: 20;
+
+@for $i from 1 through $n {
+  .circle:nth-child(#{$i}) {
+    transform: rotate($i*360deg/$n) 
+               translate(10.5em);
+  }
+}</pre>
+            </div>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--interact dark' data-demo='pretty'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>prettify</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.dot--pretty:nth-child(3n) {
+  background: deeppink;
+}
+.dot--pretty:nth-child(3n + 1) {
+  background: yellow;
+}
+.dot--pretty:nth-child(3n + 2) {
+  background: cyan;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live torus'>
+          <div class='circle circle--pretty'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--interact dark' data-demo='ani'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>animate</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.circle--ani {
+  /**animation: rot 5s linear infinite;/**/
+}
+@keyframes rot {
+  to { transform: rotate(-360deg); }
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='torus torus--ani'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    
+    <section class='slide dark'>
+      
+      <header class='slide__header'>
+        <h2 class='slide__title'>equalizer</h2>
+      </header>
+      
+      <section class='slide__body gallery__item--current'>
+        <div class='equalizer equalizer--final'></div>
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>steps</h3>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual list--bulleted'>
+          
+          <li class='list__item'>
+            an element for each bar, animate the <code>height</code>...
+          </li>
+          
+          <li class='list__item'>
+            or not!
+          </li>
+          
+          <li class='list__item'>
+            the entire thing can be done with just 1 element
+          </li>
+          
+          <li class='list__item'>
+            use a <code>linear-gradient</code> for each bar
+          </li>
+          
+          <li class='list__item'>
+            animate the <code>background-size</code> along the <code>y-axis</code>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>stripes</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.stripes {
+  background: 
+    linear-gradient(red, red), 
+    linear-gradient(tan, tan) 20% 0, 
+    linear-gradient(red, red) 40% 0, 
+    linear-gradient(tan, tan) 60% 0, 
+    linear-gradient(red, red) 80% 0;
+  background-repeat: no-repeat;
+  background-size: 20% 100%;
+}</pre>
+        </div> <!-- end code box -->
+
+        <div class='box cartoon attached--bottom attached--right'>
+          <img class='cartoon__img' src='images/_wile.png'/>
+          <div class='cartoon__txt cartoon__txt--wile'>
+            WHY?!?
+          </div>
+        </div> <!-- end cartoon -->
+        
+        <section class='result result--live'>
+          <div class='stripes'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap' data-c1='css' data-c2='recap'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>how <code>background-position</code> works</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.p {
+  background: 
+    linear-gradient(90deg, tan 40%, red 40%) no-repeat 40% 0, 
+    linear-gradient(90deg, grey 40%, white 40%);
+  background-size: 50% 80%, 100% 100%;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='p'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>static wave</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.wave {
+  background: linear-gradient(red, red) 0 100%, 
+              linear-gradient(tan, tan) .75em 100%, /* gutter + bar width */
+              linear-gradient(red, red) 1.5em 100%, 
+              linear-gradient(tan, tan) 2.25em 100%, 
+              linear-gradient(red, red) 3em 100%;
+  background-repeat: no-repeat;
+  background-size: 
+      .5em calc(50% + .5*50%), .5em calc(50% + .866*50%), .5em calc(50% + 1*50%), 
+      .5em calc(50% + .866*50%), .5em calc(50% + .5*50%);
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='wave'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          the code for the static wave
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual'>
+          
+          <li class='list__item list__item--floater'>
+            <div>CSS</div>
+            
+            <div class='box box--fill-h'>
+              <pre>.wave {
+  background: 
+    linear-gradient(red, red) 
+      0 100%, 
+    linear-gradient(tan, tan) 
+      .75em 100%,
+    linear-gradient(red, red) 
+      1.5em 100%, 
+    linear-gradient(tan, tan) 
+      2.25em 100%;
+  background-repeat: no-repeat;
+  background-size: 
+    .5em calc(50% + .5*50%), 
+    .5em calc(50% + .866*50%), 
+    .5em calc(50% + 1*50%), 
+    .5em calc(50% + .866*50%);
+}</pre>
+            </div>
+          </li>
+          
+          <li class='list__item list__item--floater'>
+            <div>Sass</div>
+            
+            <div class='box box--fill-h'>
+            <pre>$n: 12;
+$g: .25em;
+$w: .5em;
+$b: ();
+$s: ();
+$a: 360/$n;
+
+@for $i from 1 through $n {
+  $c: hsl($i*$a, 100%, 50%);
+  $b: $b, linear-gradient($c, $c) 
+    ($i - 1)*($w + $g) 100%;
+  $s: $s, $w (1 + sin($a*1deg))*50%;
+}
+
+.wave {
+  background: $b;
+  background-repeat: no-repeat;
+  background-size: $s;
+}</pre>
+            </div>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          the code for the animated wave
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <pre>$n: 12;
+$p: $n;
+$t: 2;
+.wave { animation: wave-ani $t*1s linear infinite; }
+@keyframes wave-ani {
+  @for $j from 1 through $p {
+    #{$j*100%/$p} {
+      $s: ();
+      @for $i from 1 through $n {
+        $s: $s, 
+          .5em (1 + sin(($j*$t/$p + $i/$n)*360deg))*50%;
+      }
+      background-size: $s;
+    }
+  }
+}</pre>
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+
+    
+    
+    <section class='slide dark'>
+      
+      <header class='slide__header'>
+        <h2 class='slide__title'>spin it, spin it, spin it!</h2>
+      </header>
+      
+      <section class='slide__body gallery__item--current'>
+        <img class='gallery__img' 
+          src='images/ex_3_0_orig.gif'/>
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>steps</h3>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual list--bulleted'>
+          
+          <li class='list__item'>
+            two elements rotating in opposite directions
+          </li>
+          
+          <li class='list__item'>
+            discs stacked one on top of the other
+          </li>
+          
+          <li class='list__item'>
+            the central points of the discs are on the same circle
+          </li>
+          
+          <li class='list__item'>
+            use radial gradients for the discs
+          </li>
+          
+          <li class='list__item'>
+            illustration
+            <div class='stack-idea'></div>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap' data-c1='css' data-c2='recap'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'><code>radial-gradient</code></h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.grad {
+  background: 
+    radial-gradient(circle 3em at 50% 50%, crimson 20%, transparent 25%);
+  background-position: 50% 20%;
+  background-size: 40% 40%;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='grad'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap' data-c1='maths' data-c2='recap'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>
+          coordinates of a point on a circle
+        </h3>
+      </header>
+      
+      <section class='slide__body gallery__item--current'>
+        <img class='gallery__img' 
+          src='images/ex_3_1_coord_on_circle.png'/>
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>stacking gradients</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.stack {
+  width: 8em; height: 8em;
+  background: 
+    radial-gradient(circle at calc(50% + 1*25%) calc(50% + 0*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + .7*25%) calc(50% + .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + 0*25%) calc(50% + 1*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% - .7*25%) calc(50% + .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% - 1*25%) calc(50% + 0*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% - .7*25%) calc(50% - .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + 0*25%) calc(50% - 1*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + .7*25%) calc(50% - .7*25%), 
+      dodgerblue 2em, transparent 2em);
+}</pre>
+        </div> <!-- end code box -->
+
+        <div class='box cartoon attached--bottom attached--right'>
+          <img class='cartoon__img' src='images/_wile.png'/>
+          <div class='cartoon__txt cartoon__txt--wile'>
+            WTF?!
+          </div>
+        </div> <!-- end cartoon -->
+        
+        <section class='result result--live'>
+          <div class='stack'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide slide--recap' data-c1='maths' data-c2='recap'>
+      
+      <header class='slide__header'>
+        <h3 class='slide__title'>
+          computing the radius
+        </h3>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='cc c--wrap'>
+          <div class='cc c--inner'></div>
+          <div class='cc c--inner'></div>
+          <div class='triangle'></div>
+          <div class='fig__label'><code>2<em>r</em></code></div>
+          <div class='fig__label'><code><em>a</em>/2</code></div>
+          <div class='fig__label'><code><em>R</em></code></div>
+          <div class='fig__label'><code><em>r</em></code></div>
+          <div class='fig__label'><code><em>r</em></code></div>
+        </div>
+        
+      </section> <!-- end slide body -->
+      
+      <footer class='box box--fill-h attached--bottom attached--left'>
+        
+        <p><code><em>n</em></code> = number of disks</p>
+        <p><code><em>a</em> = 360deg/<em>n</em></code></p>
+        <p><code>cos(<em>a</em>/2) = <em>R</em>/(2<em>r</em>) => <em>r</em> = <em>R</em>/(2cos(<em>a</em>/2))</code></p>
+        
+      </footer>
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>fix the stacking</h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <div class='box attached--bottom attached--left box--fill-h'>
+          <pre class='box__code box__code--css' data-code='CSS' contenteditable>.stack:before {
+  margin: 0 50%; width: 50%; height: 100%;
+  background: 
+    radial-gradient(circle at calc(50% - 1*25%) calc(50% + 0*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% - .7*25%) calc(50% - .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + 0*25%) calc(50% - 1*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + .7*25%) calc(50% - .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + 1*25%) calc(50% + 0*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + .7*25%) calc(50% + .7*25%), 
+      dodgerblue 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% + 0*25%) calc(50% + 1*25%), 
+      crimson 2em, transparent 2em), 
+    radial-gradient(circle at calc(50% - .7*25%) calc(50% + .7*25%), 
+      dodgerblue 2em, transparent 2em);
+  background-position: 100% 0; background-size: 200% 100%;
+}</pre>
+        </div> <!-- end code box -->
+        
+        <section class='result result--live'>
+          <div class='stack'></div>
+        </section> <!-- end result section -->
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h4 class='slide__title'>
+          putting it all together
+        </h4>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <pre>$n: 40;
+$a: 360deg/$n;
+$R: 8em;
+$r1: $R/(2*cos($a/2));
+$bg: ();
+$cover: ();
+@for $i from 0 to $n {
+  $bg: $bg, radial-gradient(circle 
+    at $R + $r1*cos($i*$a) $R + $r1*sin($i*$a), 
+    hsl(0, 0%, (1 - pow(-1, $i))*50%) $r1, transparent $r1);
+  $cover: $cover, radial-gradient(circle 
+    at $R + $r1*cos($i*$a - 180deg) 
+       $R + $r1*sin($i*$a - 180deg), 
+    hsl(0, 0%, (1 - pow(-1, $i))*50%) $r1, transparent $r1);
+}</pre>
+        
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+    <section class='slide'>
+      
+      <header class='slide__header'>
+        <h6 class='slide__title'>
+          also with these CSS properties
+        </h6>
+      </header>
+      
+      <section class='slide__body'>
+        
+        <ul class='list list--gradual list--bulleted'>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_a_unpack_prism.html' target='_blank'>unpack me!</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_b_deconstruct_dodecahedron.html' target='_blank'>break dodecahedron</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_c_deconstruct_icosahedron.html' target='_blank'>break icosahedron</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_d_morph_icosahedron.html' target='_blank'>morpher</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_e_explode_cube.html' target='_blank'>explode cube</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_1_f_explode_rhombic_dodecahedron.html' target='_blank'>explode rhombic dodecahedron</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_2_a_conic_gradient.html' target='_blank'>conic gradient... or not?</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_3_a_xmas_lights.html' target='_blank'>Christmas lights</a>
+          </li>
+          
+          <li class='list__item'>
+            <a href='demos/extra_3_b_cup of tea.html' target='_blank'>time for tea!</a>
+          </li>
+          
+        </ul> <!-- end bulleted list -->
+              
+      </section> <!-- end slide body -->
+      
+    </section> <!-- end slide -->
+    
+  </section> <!--end ALL slides -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
