@@ -9,7 +9,7 @@ This talk is going to deconstruct some examples, explain the mathematical reason
 
 ## Usage
 
-Drop the repo link to http://5minfork.com/
+Check slides at: http://5minfork.com/thebabydino/visuals
 
 ## Slideshow navigation
 
